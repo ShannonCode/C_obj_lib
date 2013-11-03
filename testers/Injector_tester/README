@@ -1,5 +1,0 @@
-Type "make" to compile
-Type "./injector_tester <interface>" to run
-
-
-e.g.	./injector_tester mon0		=> Inject packet on interface "mon0"
