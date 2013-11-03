@@ -1,0 +1,2 @@
+gnuplot_tester:gnuplot_tester.c ../OBLib/String/String.c ../OBLib/Collection/LinkedList.c ../OBLib/Time/TimeTools.c ../OBLib/Application/GnuPlot.c
+	gcc -iquote ../OBLib/Collection -iquote ../OBLib/Time -iquote ../OBLib/Application -iquote ../OBLib/String gnuplot_tester.c ../OBLib/String/String.c ../OBLib/Collection/LinkedList.c ../OBLib/Time/TimeTools.c ../OBLib/Application/GnuPlot.c -o gnuplot_tester

@@ -1,0 +1,6 @@
+Type "make" to compile
+Type "./sniffer_tester <inteface> <numpackets> <filter>" to run (note: filter is same as that used by TCP dump - optional)
+
+
+e.g.	./sniffer_tester mon0 3 "udp"		=> Capture 3 udp packets on interface "mon0"
+	./sniffer_tester mon0 100		=> Capture 100 packets on interface "mon0"
