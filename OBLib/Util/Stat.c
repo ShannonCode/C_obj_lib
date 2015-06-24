@@ -18,8 +18,6 @@ char * statElementToString ( struct StatElement * se )
 
 	size = sprintf(string, "%f\t%d", se->data, se->freq );
 
-	//printf("\n\n%s\t\tis the result which is %d long\n\n", string, size);
-
 	if( se->description == NULL )
 	{
 		se->description = (char *)malloc( sizeof( char[size+1] ) );
@@ -49,22 +47,17 @@ int statElementComparator( void *element1, void *element2)
 	sprintf( buffa, "%f", ((StatElement*)element1)->data );
 	sprintf( buffb, "%f", ((StatElement*)element2)->data );
 
-	//printf("\ne1-> %s \te2-> %s",buffa, buffb);
-
 	//Check for equality first
 	if( strcmp(buffa,buffb) == 0 )
 	{
-		//printf("\tequal");
 		return 0;
 	}
 	else if( ((StatElement*)element1)->data < ((StatElement*)element2)->data )
 	{
-		//printf("\tless than");
 		return -1;
 	}
 	else
 	{
-		//printf("\tgreater");
 		return 1;
 	}
 }

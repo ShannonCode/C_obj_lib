@@ -11,7 +11,6 @@ int listIterator_hasNext( ListIterator * iterator )
 {
 	if(iterator->current != NULL )
 	{
-		//if( iterator->current->next != NULL )
 		return 1;
 	}
 	else

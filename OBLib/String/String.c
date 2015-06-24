@@ -12,9 +12,7 @@
 void String_set( String * s, char * value )
 {
 	int size = strlen(value);
-
-	//printf("\n\n%s\t\tis the result which is %d long\n\n", string, size);
-
+	
 	if( s->value == NULL )
 	{
 		s->value = (char *)malloc( sizeof( char[size+1] ) );
